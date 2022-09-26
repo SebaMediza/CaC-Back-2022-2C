@@ -37,3 +37,7 @@ function actualizarTexto(id, nuevoValor){
 function esPar(valorDelLableContador){
     return valorDelLableContador % 2;
 }
+
+function test(){
+    console.log(parseInt(Math.pow(-8,3))); 
+}
