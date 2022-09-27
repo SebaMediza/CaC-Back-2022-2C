@@ -51,7 +51,6 @@ function notaAlta(arreglo){
 };
 function promedio(arreglo){
     let suma=arreglo[0];
-    let cantidaNotas=arreglo.length;
     let promedio;
     for(let i=1;i<arreglo.length;i++){
         suma=parseInt(suma)+parseInt(arreglo[i]);
