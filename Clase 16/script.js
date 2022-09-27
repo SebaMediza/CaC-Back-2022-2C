@@ -11,11 +11,13 @@ function cagarNotas(){
 function notaBaja(arreglo){
     let minimo;
     for (let i=0;i<arreglo.length;i++){
-        if(arreglo[i]<arreglo[i+1]){
+        minimo=arreglo[i]
+        if(minimo>arreglo[i+1]){
             minimo=arreglo[i];
         }
     }
-    console.log("La nota mas baja es: ",minimo);
+    const lableNotaBaja=document.getElementById('notaBaja');
+    lableNotaBaja.innerHTML=minimo;
 };
 function notaAlta(arreglo){
     let maximo;
@@ -24,7 +26,8 @@ function notaAlta(arreglo){
             maximo=arreglo[i+1];
         }
     }
-    console.log('La nota mas alta es: ',maximo);
+    const lableNotaAlta=document.getElementById('notaAlta');
+    lableNotaAlta.innerHTML=maximo;
 };
 function promedio(arreglo){
     let suma=arreglo[0];
@@ -33,5 +36,6 @@ function promedio(arreglo){
         suma=parseInt(suma)+parseInt(arreglo[i]);
     }
     promedio=parseFloat(suma/arreglo.length)
-    console.log('El promedio de notas fue: ',promedio);
+    const lablePromedio=document.getElementById('promedio');
+    lablePromedio.innerHTML=promedio;
 };
