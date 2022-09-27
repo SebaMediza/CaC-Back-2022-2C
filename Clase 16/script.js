@@ -27,11 +27,9 @@ function cagarNotas(){
     for(let i=0;i<3;i++){
         arreglo[parseInt(i)]=prompt("Ingrese la Nota del Alumno")
     }
-
-notaBaja(arreglo);
-notaAlta(arreglo);
-promedio(arreglo)
-
+    notaBaja(arreglo);
+    notaAlta(arreglo);
+    promedio(arreglo);
 };
 function notaBaja(arreglo){
     let minimo;
