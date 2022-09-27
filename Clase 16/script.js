@@ -1,26 +1,3 @@
-function test_arreglo(){
-    /*arreglo.push(10);
-    arreglo.push(20);
-    arreglo.push(30);
-    arreglo.push(40);
-    arreglo.push(50);
-    arreglo.push(60);
-    arreglo.push(70);
-    arreglo.push(80);
-    arreglo.push(90);
-    arreglo.push(parseInt(100));
-    */
-   console.clear();
-   
-   for(let i=0;i<arreglo.length;i++){
-       console.log('Loading...',arreglo[i])
-    if(arreglo[i]==100){
-        console.log('Loading Completed')
-        console.log('Deployment in Progress')
-    }
-};
-console.log('Deployment Completed')
-};
 let arreglo=[];
 
 function cagarNotas(){
