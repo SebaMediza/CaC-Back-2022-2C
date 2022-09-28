@@ -26,6 +26,7 @@ function calcular(){
             result=parseInt(valor1) / parseInt(valor2);
             console.log(result);
             break;
+        //sdasdawdawdasdaw
         case '*':
             result=parseInt(valor1) * parseInt(valor2);
             console.log(result);
