@@ -2,7 +2,8 @@ let arrayPalabras=[];
 function addPalabra(){
     const valuePalabra=document.getElementById('palabra').value;
     //console.log(valuePalabra);
-    if(valuePalabra===''){
+    const isValalid=validarPalabra(valuePalabra)
+    if(!isValalid){
         alert('debe completar el campo');
         return;
     }
@@ -19,6 +20,9 @@ function listarPalabras(){
         document.getElementById('listaPalabras').innerHTML+= ` ${unaPalabra} <br>`;//alt+96 
     }
     //arrayPalabras.forEach(x=>)
+}
+function validarPalabra(valuePalabra){
+    return valuePalabra != '';
 }
 
 /*
