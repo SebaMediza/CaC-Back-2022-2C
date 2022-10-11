@@ -40,10 +40,10 @@ const personas = [
     ]
     }
 ]
-// convertir a JSON como str
 function repasoArray(){
-console.log(personas);
-
+  console.log(personas);
+  
+  // convertir a JSON como str
 const str = JSON.stringify(personas);
 console.log(str);
 
